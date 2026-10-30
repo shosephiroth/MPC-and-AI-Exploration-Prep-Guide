@@ -1,4 +1,4 @@
-# MPC & AI Exploration Bridge (Proof of Concept)
+# MPC & AI Exploration Bridge (Educational Exploration)
 
 Welcome to the **MPC & AI Exploration Bridge** repository. 
 
