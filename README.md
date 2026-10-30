@@ -2,8 +2,7 @@
 
 Welcome to the **MPC & AI Exploration Bridge** repository. 
 
-This project serves as an exploratory proof of concept (PoC) and experimental design framework evaluating how emergent AI workflows—specifically Anthropic’s Model Context Protocol (MCP) and Open Sound Control (OSC)—can interface with standalone hardware samplers, grooveboxes, and modern music production units (such as the Akai MPC ecosystem).
-
+This project serves as an open-source educational exploration and experimental framework evaluating how emergent AI workflows—specifically Anthropic’s Model Context Protocol (MCP) and Open Sound Control (OSC)—can interface with standalone hardware samplers, grooveboxes, and modern music production units (such as the Akai MPC ecosystem).
 ---
 
 ## 📌 Project Status: Conceptual Working Draft
