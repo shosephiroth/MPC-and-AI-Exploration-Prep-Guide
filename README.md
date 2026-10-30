@@ -14,7 +14,7 @@ Please note that this repository represents early-stage technical research, arch
 
 ## ⚠️ Important Advisory & Operational Disclaimer
 
-> ### A Quick Note From Our Team
+> ### A Quick Note From Me and the LLM That Wrote This
 >
 > **Notice of Experimental Nature & Synthesized Information**  
 > The architectural models, schematics, and instructional workflows presented across this documentation were assembled, synthesized, and aggregated with the assistance of artificial intelligence (AI) systems alongside open-source protocol research. While every effort has been made to align with established specifications (including the Model Context Protocol, MIDI 1.0/2.0 standards, and OSC schemas), this material should be treated as a technical rough draft rather than verified manufacturer documentation.
