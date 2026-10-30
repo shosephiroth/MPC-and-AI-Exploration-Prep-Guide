@@ -11,9 +11,9 @@ Use this directory to jump directly into specific technical tracks and sub-guide
 
 | Module | Topic | Core Technologies | Status |
 | :--- | :--- | :--- | :--- |
-| **[Module 01](#module-01-local-mcp-servers-for-midi--hardware-control)** | Local MCP Server Setup | Node.js, TypeScript, Claude Desktop, Virtual MIDI | Ready |
-| **[Module 02](#module-02-hardware-architecture--tier-comparison)** | Hardware Architecture Comparison | MPC Sample / Sample Key vs. MPC Live III | Ready |
-| **[Module 03](#module-03-open-sound-control-osc-for-hardware-control)** | OSC Fundamentals for Grooveboxes | UDP Sockets, OSC Address Schemas, Floating-point control | Ready |
+| **[Module 01](#module-01-local-mcp-servers-for-midi--hardware-control)** | Local MCP Server Setup | Node.js, TypeScript, Claude Desktop, Virtual MIDI | Planned / In Draft |
+| **[Module 02](#module-02-hardware-architecture--tier-comparison)** | Hardware Architecture Comparison | MPC Sample / Sample Key vs. MPC Live III | Planned / In Draft |
+| **[Module 03](#module-03-open-sound-control-osc-for-hardware-control)** | OSC Fundamentals for Grooveboxes | UDP Sockets, OSC Address Schemas, Floating-point control | Planned / In Draft |
 | **[Module 04](#module-04-programmatic-sample-chopping--xml-generation)** | Programmatic `.xpm` & File Synthesis | Python, XML ASTs, transient slicing (`librosa`) | Planned / In Draft |
 | **[Module 05](#module-05-micro-timing-swing-injection--generative-patterns)** | Generative Sequencer & Micro-Timings | Millisecond offsets, humanized velocity curves | Planned / In Draft |
 | **[Module 06](#module-06-usb-gadget-networking-rndis--cdc-ecm)** | Direct Hardware Networking | Linux USB Gadget, Ethernet over USB-C | Planned / In Draft |
