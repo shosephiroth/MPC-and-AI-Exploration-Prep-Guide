@@ -7,16 +7,17 @@
 
 ## 🧭 Guide Table of Contents & Module Index
 
-Use this directory to jump directly into specific technical tracks and sub-guides:
+Use this directory to jump directly into specific technical tracks and standalone sub-guides:
 
 | Module | Topic | Core Technologies | Status |
 | :--- | :--- | :--- | :--- |
 | **[Module 01](#module-01-local-mcp-servers-for-midi--hardware-control)** | Local MCP Server Setup | Node.js, TypeScript, Claude Desktop, Virtual MIDI | Planned / In Draft |
 | **[Module 02](#module-02-hardware-architecture--tier-comparison)** | Hardware Architecture Comparison | MPC Sample / Sample Key vs. MPC Live III | Planned / In Draft |
 | **[Module 03](#module-03-open-sound-control-osc-for-hardware-control)** | OSC Fundamentals for Grooveboxes | UDP Sockets, OSC Address Schemas, Floating-point control | Planned / In Draft |
-| **[Module 04](#module-04-programmatic-sample-chopping--xml-generation)** | Programmatic `.xpm` & File Synthesis | Python, XML ASTs, transient slicing (`librosa`) | Planned / In Draft |
-| **[Module 05](#module-05-micro-timing-swing-injection--generative-patterns)** | Generative Sequencer & Micro-Timings | Millisecond offsets, humanized velocity curves | Planned / In Draft |
-| **[Module 06](#module-06-usb-gadget-networking-rndis--cdc-ecm)** | Direct Hardware Networking | Linux USB Gadget, Ethernet over USB-C | Planned / In Draft |
+| **[Module 04](./third_party_engines_vintage_sound_injection.md)** | **3rd-Party Engines & Vintage Sound Injection** | **Pure Data, Faust, TinySoundFont, AI Auto-Keygrouping** | Planned / In Draft |
+| **[Module 05](#module-05-programmatic-sample-chopping--xml-generation)** | Programmatic `.xpm` & File Synthesis | Python, XML ASTs, transient slicing (`librosa`) | Planned / In Draft |
+| **[Module 06](#module-06-micro-timing-swing-injection--generative-patterns)** | Generative Sequencer & Micro-Timings | Millisecond offsets, humanized velocity curves | Planned / In Draft |
+| **[Module 07](#module-07-usb-gadget-networking-rndis--cdc-ecm)** | Direct Hardware Networking | Linux USB Gadget, Ethernet over USB-C | Planned / In Draft |
 
 ---
 
@@ -135,7 +136,19 @@ An OSC packet consists of an **Address Pattern**, a **Type Tag**, and **Argument
 
 ---
 
-## Module 04: Programmatic Sample Chopping & XML Generation
+## Module 04: Third-Party Engines & Vintage Sound Ingestion
+
+> **Full Documentation:** [Read the dedicated guide: `third_party_engines_vintage_sound_injection.md`](./third_party_engines_vintage_sound_injection.md)
+
+This module details how open-source runtimes and AI orchestration turn the MPC Sample and Sample Key into chameleonic vintage synthesizers:
+
+* **Archetypes Covered:** FM synthesis (Yamaha DX7/TX81Z), Linear Arithmetic/Vector (Roland D-50, Prophet VS), and early 8-bit/12-bit crunch (Fairlight CMI, E-mu SP-1200).
+* **Autonomous Multi-Sampling:** Using Claude and headless engines to render keyzones, truncate leading silence, and compile valid Akai `.xpm` keygroup files automatically.
+* **Embedded Micro-Runtimes:** Running Pure Data (`pd-vanilla`), Faust DSP, or `TinySoundFont` inside open-source hardware architectures.
+
+---
+
+## Module 05: Programmatic Sample Chopping & XML Generation
 *(Detailed walkthrough upcoming in separate module file)*
 
 * **Concept:** Bypassing manual hardware slicing by using Python audio libraries (`librosa`, `scipy`) to detect onset transients in audio files.
@@ -144,7 +157,7 @@ An OSC packet consists of an **Address Pattern**, a **Type Tag**, and **Argument
 
 ---
 
-## Module 05: Micro-Timing, Swing Injection & Generative Patterns
+## Module 06: Micro-Timing, Swing Injection & Generative Patterns
 *(Detailed walkthrough upcoming in separate module file)*
 
 * **Beyond Static Swing:** Generating humanized groove templates that introduce micro-delays (e.g., pulling snare hits late by 10–25 ms while pushing hats ahead).
@@ -152,7 +165,7 @@ An OSC packet consists of an **Address Pattern**, a **Type Tag**, and **Argument
 
 ---
 
-## Module 06: USB Gadget Networking (RNDIS / CDC-ECM)
+## Module 07: USB Gadget Networking (RNDIS / CDC-ECM)
 *(Detailed walkthrough upcoming in separate module file)*
 
 * **Ethernet-over-USB:** Leveraging embedded Linux USB Gadget drivers to create a high-speed, point-to-point network connection over a single USB-C cable.
@@ -174,6 +187,7 @@ An OSC packet consists of an **Address Pattern**, a **Type Tag**, and **Argument
 
 ## 📚 References & Upstream Projects
 
+* [Third-Party Engines & Vintage Sound Injection Guide](./third_party_engines_vintage_sound_injection.md) — Dedicated sound design and engine loading deep-dive.
 * [Model Context Protocol Documentation](https://modelcontextprotocol.io/) — Official Anthropic MCP specification.
 * [anteriovieira/osc-mcp-server](https://github.com/anteriovieira/osc-mcp-server) — Inspiration for OSC-to-MCP translation layers.
 * [The Open Sound Control 1.0 Specification](https://opensoundcontrol.stanford.edu/spec-1_0.html) — Technical standard reference.
